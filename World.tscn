@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Platform/Platform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Draw Control/Draw Control.tscn" type="PackedScene" id=3]
+
+[node name="World" type="Node"]
+
+[node name="Draw Control" parent="." instance=ExtResource( 3 )]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 66.0328, 318.244 )
+
+[node name="Platform" parent="." instance=ExtResource( 2 )]
+position = Vector2( 186.749, 514.347 )
+
+[node name="Platform2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 797.689, 515.762 )
